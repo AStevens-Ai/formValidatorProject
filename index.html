@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation Project</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+    <div class="sectionOne">
+        <h1>Welcome to Bills Barber Shop</h1>
+    </div>
+<div class="sectionTwo">
+    <h1>Schedule a haircut by signing up!</h1>
+    <form action="#" id="form" novalidate>
+      <fieldset>
+        <legend>Sign Up</legend>
+        <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <span class="error"></span>
+        
+
+        <label for="country">Country:</label>
+            <input type="text" id="country" name="country" required>
+            <span class="error"></span>
+        
+
+        <label for="zip">Zip Code:</label>
+            <input type="text" id="zip" name="zip" required minlength="5">
+            <span class="error"></span>
+        
+        <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <span class="error"></span>
+        
+        
+        <label for="confirmPass">Confirm Password:</label>
+            <input type="password" id="confirmPass" name="confirmPass" required>
+            <span class="error"></span>
+
+        <button type="submit">Submit</button>
+       </fieldset>
+    </form>
+</div>
+</div>
+</body>
+</html>
